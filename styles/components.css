@@ -1,0 +1,18 @@
+@tailwind components;
+
+@layer components {
+  /* PRIMARY BUTTON STARTS */
+  .btn-primary {
+    @apply px-2 py-1 font-semibold border border-slate-100 bg-blue-500/20 text-blue-700  rounded uppercase transition-all;
+  }
+  .btn-primary:hover {
+    @apply bg-blue-100 scale-105 border-slate-200 shadow-blue-600/50 shadow-lg;
+  }
+  .btn-primary:active {
+    @apply scale-95;
+  }
+  .btn-primary.active {
+    @apply bg-blue-600 text-blue-100 pointer-events-none;
+  }
+  /* PRIMARY BUTTON ENDS */
+}
