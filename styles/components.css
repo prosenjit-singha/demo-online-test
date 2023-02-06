@@ -11,8 +11,17 @@
   .btn-primary:active {
     @apply scale-95;
   }
-  .btn-primary.active {
-    @apply bg-blue-600 text-blue-100 pointer-events-none;
+  .btn-primary.filled {
+    @apply bg-blue-600 text-blue-100;
+  }
+  .btn-primary.filled:hover {
+    @apply border-blue-500 shadow-blue-600/90;
+  }
+
+  .radio-option {
+    @apply flex gap-2 px-2 cursor-pointer rounded border transition-all;
+    @apply hover:bg-blue-200 hover:scale-105;
+    @apply active:scale-100;
   }
   /* PRIMARY BUTTON ENDS */
 }
