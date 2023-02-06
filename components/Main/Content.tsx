@@ -9,7 +9,7 @@ export default function Content() {
         {/* LANGUAGE OPTIONS */}
         <div className="flex gap-2 ">
           <span>View In</span>
-          <select className="text-black rounded px-2 cursor-pointer !outline-none">
+          <select className="text-black rounded px-2 cursor-pointer !outline-none ">
             <option value="english">English</option>
             <option value="hindi">Hindi</option>
             <option value="french">France</option>

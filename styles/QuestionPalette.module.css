@@ -1,0 +1,20 @@
+@tailwind components;
+
+@layer components {
+  .container {
+    @apply border rounded overflow-hidden shadow-xl min-h-[200px];
+  }
+
+  .heading {
+    @apply bg-blue-500 text-white px-3 py-1;
+  }
+
+  .buttons {
+    @apply px-3 py-2 grid grid-cols-5;
+    grid-template-rows: auto;
+  }
+
+  .btn {
+    @apply font-semibold;
+  }
+}

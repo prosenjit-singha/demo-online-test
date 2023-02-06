@@ -3,24 +3,24 @@
 @layer components {
   /* PRIMARY BUTTON STARTS */
   .btn-primary {
-    @apply px-2 py-1 font-semibold border border-slate-100 bg-blue-500/20 text-blue-700  rounded uppercase transition-all;
+    @apply px-2 py-1 font-semibold border border-blue-300 bg-blue-400/0 text-blue-600/95  rounded uppercase transition-all;
   }
   .btn-primary:hover {
-    @apply bg-blue-100 scale-105 border-slate-200 shadow-blue-600/50 shadow-lg;
+    @apply bg-blue-500/10 scale-105 shadow-blue-600/50 shadow-lg;
   }
   .btn-primary:active {
     @apply scale-95;
   }
   .btn-primary.filled {
-    @apply bg-blue-600 text-blue-100;
+    @apply bg-blue-500 border-blue-500 text-white;
   }
   .btn-primary.filled:hover {
-    @apply border-blue-500 shadow-blue-600/90;
+    @apply border-blue-600 shadow-blue-600/90;
   }
 
   .radio-option {
-    @apply flex gap-2 px-2 cursor-pointer rounded border transition-all;
-    @apply hover:bg-blue-200 hover:scale-105;
+    @apply flex gap-2 px-2 py-1 cursor-pointer rounded border transition-all;
+    @apply hover:bg-blue-50 hover:scale-105 hover:border-blue-300;
     @apply active:scale-100;
   }
   /* PRIMARY BUTTON ENDS */
