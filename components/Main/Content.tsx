@@ -1,6 +1,6 @@
 export default function Content() {
   return (
-    <section className="min-h-[80%] flex flex-col rounded overflow-hidden border border-slate-300">
+    <section className="flex min-h-[80%]  flex-col rounded overflow-hidden border border-slate-300">
       {/* CONTENT HEADER */}
       <div className="bg-blue-500 flex h-fit justify-between py-2 px-4 text-white">
         {/* QUESTION NO */}

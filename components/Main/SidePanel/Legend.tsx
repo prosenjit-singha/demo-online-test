@@ -25,7 +25,9 @@ export default function Legend() {
           1 No Visit
         </li>
       </ul>
-      <h3 className="px-3 py-1 bg-blue-300 text-center">10 All Questions</h3>
+      <h3 className="px-3 py-1 mx-3 rounded bg-blue-200 font-semibold text-blue-900 text-center">
+        10 All Questions
+      </h3>
 
       {/* BUTTONS */}
       <div className="grid grid-cols-2 gap-1 px-3 py-2">

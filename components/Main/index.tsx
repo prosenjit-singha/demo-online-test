@@ -4,7 +4,7 @@ import SidePanel from "./SidePanel";
 export default function Main() {
   return (
     <main className="grid grid-cols-12 min-h-[calc(100vh-56px)] px-4 py-2 mb-4">
-      <article className=" col-start-1 col-end-10">
+      <article className=" col-start-1 col-end-[-1] lg:col-end-10">
         {/* HEADER SECTION */}
         <section className="flex items-center mb-4 gap-3">
           <button className="btn-primary filled">All Section</button>
