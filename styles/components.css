@@ -3,11 +3,11 @@
 @layer components {
   /* PRIMARY BUTTON STARTS */
   .btn-primary {
-    @apply px-2 py-1 font-semibold border border-blue-300 bg-blue-400/0 text-blue-600/95  rounded uppercase transition-all;
+    @apply px-2 py-1 font-semibold border border-blue-300 bg-blue-400/0 text-blue-600/95  rounded uppercase transition-colors;
   }
-  .btn-primary:hover {
+  /* .btn-primary:hover {
     @apply bg-blue-500/10 scale-105 shadow-blue-600/50 shadow-lg;
-  }
+  } */
   .btn-primary:active {
     @apply scale-95;
   }
