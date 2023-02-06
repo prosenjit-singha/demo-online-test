@@ -44,20 +44,20 @@ export default function Content() {
           {/* ANSWER OPTIONS */}
           <div className="mt-4 flex flex-col gap-1">
             <label className="radio-option">
-              <input name="answer" type="radio" value="1" />
-              <span>Answer 1</span>
+              <input name="answer" type="radio" value="A" />
+              <span>(A) Answer 1</span>
             </label>
             <label className="radio-option">
-              <input name="answer" type="radio" value="2" />
-              <span>Answer 1</span>
+              <input name="answer" type="radio" value="B" />
+              <span>(B) Answer 1</span>
             </label>
             <label className="radio-option">
-              <input name="answer" type="radio" value="3" />
-              <span>Answer 1</span>
+              <input name="answer" type="radio" value="C" />
+              <span>(C) Answer 1</span>
             </label>
             <label className="radio-option">
-              <input name="answer" type="radio" value="4" />
-              <span>Answer 1</span>
+              <input name="answer" type="radio" value="D" />
+              <span>(D) Answer 1</span>
             </label>
           </div>
         </div>

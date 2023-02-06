@@ -1,5 +1,6 @@
 import Content from "./Content";
 import { TbArrowNarrowRight as NextIcon } from "react-icons/tb";
+import SidePanel from "./SidePanel";
 export default function Main() {
   return (
     <main className="grid grid-cols-12 min-h-[calc(100vh-56px)] px-4 py-2">
@@ -25,7 +26,7 @@ export default function Main() {
         </div>
       </article>
       {/* SIDEBAR SECTION */}
-      <section className="bg-blue-300 col-start-10 col-end-13">sidebar</section>
+      <SidePanel />
     </main>
   );
 }
