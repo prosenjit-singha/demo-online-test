@@ -44,6 +44,12 @@ const buttonProps: MotionProps = {
   },
 };
 
+const bottomButtonProps: MotionProps = {
+  initial: { opacity: 0, transform: "translateY(150%)" },
+  animate: { opacity: 1, transform: "translateY(0%)" },
+  exit: { opacity: 0, transform: "translateY(150%)" },
+};
+
 export default function Main() {
   return (
     <main className="grid grid-cols-12 min-h-[calc(100vh-56px)] px-4 py-2 mb-4">
@@ -69,15 +75,26 @@ export default function Main() {
         {/* CONTENT SECTION */}
         <Content />
         {/* CONTENT ACTIONS */}
-        <div className="flex gap-2 mt-3">
-          <button className="btn-primary">Clear Response</button>
-          <button className="btn-primary">Review</button>
-          <button className="btn-primary">Dump</button>
-          <button className="btn-primary">Previous</button>
-          <button className="btn-primary filled flex items-center gap-1">
+        <motion.div {...buttonsProps} className="flex gap-2 mt-3">
+          <motion.button {...buttonProps} className="btn-primary">
+            Clear Response
+          </motion.button>
+          <motion.button {...buttonProps} className="btn-primary">
+            Review
+          </motion.button>
+          <motion.button {...buttonProps} className="btn-primary">
+            Dump
+          </motion.button>
+          <motion.button {...buttonProps} className="btn-primary">
+            Previous
+          </motion.button>
+          <motion.button
+            {...buttonProps}
+            className="btn-primary filled flex items-center gap-1"
+          >
             Next <NextIcon size={24} />
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
       </article>
       {/* SIDEBAR SECTION */}
       <SidePanel />
