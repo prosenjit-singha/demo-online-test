@@ -1,6 +1,20 @@
+import { motion, MotionProps, Variants } from "framer-motion";
+
+const containerProps: MotionProps = {
+  initial: { transform: "translateY(50%)", opacity: 0 },
+  animate: {
+    transform: "translateY(0%)",
+    opacity: 1,
+    transition: { delay: 1, duration: 1 },
+  },
+};
+
 export default function Content() {
   return (
-    <section className="flex min-h-[80%]  flex-col rounded overflow-hidden border border-slate-300">
+    <motion.section
+      {...containerProps}
+      className="flex min-h-[80%]  flex-col rounded overflow-hidden border border-slate-300"
+    >
       {/* CONTENT HEADER */}
       <div className="bg-blue-500 flex h-fit justify-between py-2 px-4 text-white">
         {/* QUESTION NO */}
@@ -62,6 +76,6 @@ export default function Content() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
