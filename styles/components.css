@@ -20,8 +20,8 @@
 
   .radio-option {
     @apply flex gap-2 px-2 py-1 cursor-pointer rounded border transition-all;
-    @apply hover:bg-blue-50 hover:scale-105 hover:border-blue-300;
-    @apply active:scale-100;
+    @apply hover:bg-blue-50 hover:scale-[103%] hover:border-blue-300;
+    @apply active:scale-[102%];
   }
   /* PRIMARY BUTTON ENDS */
 }

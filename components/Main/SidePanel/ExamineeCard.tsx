@@ -8,7 +8,7 @@ function ExamineeCard({ cardProps }: Props) {
   return (
     <motion.div
       {...cardProps}
-      className="flex items-center gap-3 p-3 border rounded shadow-lg"
+      className="flex items-center gap-3 p-3 border rounded shadow-lg hover:shadow-blue-300/60"
     >
       <img
         alt="user"

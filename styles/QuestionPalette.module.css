@@ -2,7 +2,7 @@
 
 @layer components {
   .container {
-    @apply border rounded overflow-hidden shadow-xl min-h-[200px];
+    @apply border rounded overflow-hidden shadow-xl min-h-[200px] hover:shadow-blue-300/60;
   }
 
   .heading {
