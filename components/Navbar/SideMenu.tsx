@@ -11,13 +11,13 @@ type Props = {
 };
 
 const backdropVariants: Variants = {
-  hidden: { translateX: "100%", transition: { delay: 0.25 } },
-  visible: { translateX: "0%" },
+  hidden: { translateX: "100%", transition: { delay: 0.15 } },
+  visible: { translateX: "0%", transition: { ease: "easeOut" } },
 };
 
 const menuContainerVariants: Variants = {
   hidden: { translateX: "100%" },
-  visible: { translateX: "0%", transition: { delay: 0.15 } },
+  visible: { translateX: "0%", transition: { delay: 0.25, ease: "easeOut" } },
 };
 
 export default function SideMenu({ onClose, open }: Props) {
@@ -37,7 +37,7 @@ export default function SideMenu({ onClose, open }: Props) {
               initial="hidden"
               animate="visible"
               exit="hidden"
-              className="bg-black/30 fixed top-0 left-0 w-full h-full z-50"
+              className="bg-black/30 fixed top-0 left-0 w-full h-full z-50 backdrop-blur-sm"
             />
             <motion.div
               variants={menuContainerVariants}
