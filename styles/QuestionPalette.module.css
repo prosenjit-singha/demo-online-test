@@ -20,4 +20,7 @@
   .btn:hover {
     @apply scale-105 shadow-md;
   }
+  .btn:active {
+    @apply scale-95 shadow-none;
+  }
 }

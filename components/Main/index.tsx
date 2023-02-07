@@ -48,12 +48,6 @@ const buttonProps: MotionProps = {
   },
 };
 
-// const bottomButtonProps: MotionProps = {
-//   initial: { opacity: 0, transform: "translateY(150%)" },
-//   animate: { opacity: 1, transform: "translateY(0%)" },
-//   exit: { opacity: 0, transform: "translateY(150%)" },
-// };
-
 export default function Main() {
   return (
     <main className="grid grid-cols-12 min-h-[calc(100vh-56px)] px-4 py-2 pb-8 overflow-hidden">
@@ -61,7 +55,7 @@ export default function Main() {
         {/* HEADER SECTION */}
         <motion.section
           {...buttonsProps}
-          className="flex items-center mb-4 gap-3"
+          className="flex flex-wrap items-center mb-4 gap-3"
         >
           <motion.button {...buttonProps} className="btn-primary filled">
             All Section
@@ -79,7 +73,7 @@ export default function Main() {
         {/* CONTENT SECTION */}
         <Content />
         {/* CONTENT ACTIONS */}
-        <motion.div {...buttonsProps} className="flex gap-2 mt-3">
+        <motion.div {...buttonsProps} className="flex gap-2 mt-3 flex-wrap">
           <motion.button {...buttonProps} className="btn-primary">
             Clear Response
           </motion.button>
