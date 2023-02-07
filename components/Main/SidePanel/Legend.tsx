@@ -8,9 +8,9 @@ export default function Legend({ cardProps }: Props) {
   return (
     <motion.div
       {...cardProps}
-      className="rounded overflow-hidden border shadow-xl hover:shadow-blue-300/60"
+      className="rounded border shadow-xl hover:shadow-blue-300/60"
     >
-      <h1 className="px-3 py-1 bg-blue-500 text-white">
+      <h1 className="px-3 py-1 bg-blue-500 text-white rounded-t">
         Legend (Click to view)
       </h1>
       {/* INFO SECTION */}
