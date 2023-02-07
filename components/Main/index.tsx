@@ -55,7 +55,7 @@ export default function Main() {
   const [activeTab, setActiveTab] = useState<Tab>("all");
 
   return (
-    <main className="grid grid-cols-12 min-h-[calc(100vh-56px)] px-4 py-2 pb-8 overflow-hidden">
+    <main className="max-w-7xl mx-auto grid grid-cols-12 min-h-[calc(100vh-56px)] px-4 py-2 pb-8 overflow-hidden">
       <article className=" col-start-1 col-end-[-1] lg:col-end-10">
         {/* HEADER SECTION */}
         <motion.section

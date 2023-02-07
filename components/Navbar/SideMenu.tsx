@@ -44,7 +44,7 @@ export default function SideMenu({ onClose, open }: Props) {
               initial="hidden"
               animate="visible"
               exit="hidden"
-              className="bg-blue-50 z-[100] flex flex-col gap-4 px-4 py-4 h-[100vh] fixed top-0 right-0 max-w-[300px] text-sm overflow-y-scroll"
+              className="bg-blue-50 z-[100] flex flex-col gap-4 px-4 py-4 h-[100vh] fixed top-0 right-0 max-w-[320px] text-sm overflow-y-scroll"
             >
               <button
                 onClick={onClose}
