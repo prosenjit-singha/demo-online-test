@@ -1,5 +1,10 @@
 import { motion, MotionProps } from "framer-motion";
 import fig from "@/assets/images/fig-1.png";
+import optionA from "@/assets/images/options/option-a.svg";
+import optionB from "@/assets/images/options/option-b.svg";
+import optionC from "@/assets/images/options/option-c.svg";
+import optionD from "@/assets/images/options/option-d.svg";
+
 import Image from "next/image";
 
 const containerProps: MotionProps = {
@@ -69,19 +74,27 @@ export default function Content() {
           <div className="mt-4 flex flex-col gap-1">
             <label className="radio-option">
               <input name="answer" type="radio" value="A" />
-              <span>(A) Answer 1</span>
+              <span className="flex items-center gap-4">
+                (A) <Image src={optionA} alt="Option A" />
+              </span>
             </label>
             <label className="radio-option">
               <input name="answer" type="radio" value="B" />
-              <span>(B) Answer 1</span>
+              <span className="flex items-center gap-4">
+                (B) <Image src={optionB} alt="Option B" />
+              </span>
             </label>
             <label className="radio-option">
               <input name="answer" type="radio" value="C" />
-              <span>(C) Answer 1</span>
+              <span className="flex items-center gap-4">
+                (C) <Image src={optionC} alt="Option C" />
+              </span>
             </label>
             <label className="radio-option">
               <input name="answer" type="radio" value="D" />
-              <span>(D) Answer 1</span>
+              <span className="flex items-center gap-4">
+                (D) <Image src={optionD} alt="Option D" />
+              </span>
             </label>
           </div>
         </div>
