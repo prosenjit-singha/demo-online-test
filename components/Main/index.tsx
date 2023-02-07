@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Content from "./Content";
 import { TbArrowNarrowRight as NextIcon } from "react-icons/tb";
 import SidePanel from "./SidePanel";
@@ -48,7 +49,11 @@ const buttonProps: MotionProps = {
   },
 };
 
+type Tab = "all" | "physics" | "chemistry" | "maths";
+
 export default function Main() {
+  const [activeTab, setActiveTab] = useState<Tab>("all");
+
   return (
     <main className="grid grid-cols-12 min-h-[calc(100vh-56px)] px-4 py-2 pb-8 overflow-hidden">
       <article className=" col-start-1 col-end-[-1] lg:col-end-10">
@@ -57,16 +62,32 @@ export default function Main() {
           {...buttonsProps}
           className="flex flex-wrap items-center mb-4 gap-3"
         >
-          <motion.button {...buttonProps} className="btn-primary filled">
+          <motion.button
+            {...buttonProps}
+            onClick={() => setActiveTab("all")}
+            className={`btn-primary ${activeTab === "all" && "filled"}`}
+          >
             All Section
           </motion.button>
-          <motion.button {...buttonProps} className="btn-primary">
+          <motion.button
+            {...buttonProps}
+            onClick={() => setActiveTab("physics")}
+            className={`btn-primary ${activeTab === "physics" && "filled"}`}
+          >
             Physics
           </motion.button>
-          <motion.button {...buttonProps} className="btn-primary">
+          <motion.button
+            {...buttonProps}
+            onClick={() => setActiveTab("chemistry")}
+            className={`btn-primary ${activeTab === "chemistry" && "filled"}`}
+          >
             Chemistry
           </motion.button>
-          <motion.button {...buttonProps} className="btn-primary">
+          <motion.button
+            {...buttonProps}
+            onClick={() => setActiveTab("maths")}
+            className={`btn-primary ${activeTab === "maths" && "filled"}`}
+          >
             Maths
           </motion.button>
         </motion.section>

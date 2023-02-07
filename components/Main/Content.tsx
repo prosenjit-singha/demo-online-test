@@ -6,7 +6,6 @@ import optionC from "@/assets/images/options/option-c.svg";
 import optionD from "@/assets/images/options/option-d.svg";
 
 import Image from "next/image";
-import { useState } from "react";
 
 const containerProps: MotionProps = {
   initial: { transform: "translateY(50%)", opacity: 0 },
@@ -17,15 +16,7 @@ const containerProps: MotionProps = {
   },
 };
 
-type Tab = "all" | "physics" | "chemistry" | "maths";
-
 export default function Content() {
-  const [activeTab, setActiveTab] = useState<Tab>("all");
-
-  const handleTabChange = (name: Tab) => {
-    setActiveTab(name);
-  };
-
   return (
     <motion.section
       {...containerProps}
