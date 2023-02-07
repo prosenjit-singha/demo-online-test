@@ -1,4 +1,6 @@
-import { motion, MotionProps, Variants } from "framer-motion";
+import { motion, MotionProps } from "framer-motion";
+import fig from "@/assets/images/fig-1.png";
+import Image from "next/image";
 
 const containerProps: MotionProps = {
   initial: { transform: "translateY(50%)", opacity: 0 },
@@ -38,10 +40,13 @@ export default function Content() {
             Question Instructions
           </h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-            porro ad aut sit, aliquam nam molestiae at officia maiores, id
-            cupiditate iusto? Suscipit sed quisquam tempora maxime provident eos
-            minima?
+            Passage: You want to hit a small box on the floor with a marble
+            fired from a spring loaded gun that is mounted on a table. The
+            target box is distance <b>R</b> horizontally form the edge of the
+            table; see figure to the right. You compress the spring at distance{" "}
+            <b>d</b>, but the center of the marble falls short by a distance{" "}
+            <b>r</b> of the center of the box. How far should you compress the
+            spring to score a direct hit <i>(neglect friction)</i>?
           </p>
         </div>
 
@@ -49,10 +54,15 @@ export default function Content() {
         <div>
           <h3 className="font-semibold text-blue-700 text-lg mb-2">Question</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
-            deleniti non maxime, autem quibusdam illo dicta odit architecto
-            dolor id ducimus ipsum tempore eligendi enim fuga pariatur.
-            Distinctio, ea sit.
+            A block of mass <b>m</b> is projected with the velocity v
+            <sub>0</sub> as shown in the{" "}
+            <abbr className="no-underline" title="figure">
+              fig
+            </abbr>
+            . The distance between free ends is{" "}
+            <span className="font-cursive font-semibold">l</span>
+            <sub>0</sub>. Maximum displacement of the block during the motion.
+            <Image src={fig} alt="figure Image" width={250} />
           </p>
 
           {/* ANSWER OPTIONS */}

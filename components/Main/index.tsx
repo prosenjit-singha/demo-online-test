@@ -13,7 +13,7 @@ const buttonsVariants: Variants = {
   hidden: {
     transition: {
       staggerChildren: 0.05,
-      delayChildren: -1,
+      staggerDirection: -1,
     },
   },
 };
@@ -42,17 +42,21 @@ const buttonProps: MotionProps = {
       ease: "easeOut",
     },
   },
+  whileTap: {
+    scale: 1,
+    boxShadow: "0 7px 8px -5px hsla(221, 83%, 53%, 0.75)",
+  },
 };
 
-const bottomButtonProps: MotionProps = {
-  initial: { opacity: 0, transform: "translateY(150%)" },
-  animate: { opacity: 1, transform: "translateY(0%)" },
-  exit: { opacity: 0, transform: "translateY(150%)" },
-};
+// const bottomButtonProps: MotionProps = {
+//   initial: { opacity: 0, transform: "translateY(150%)" },
+//   animate: { opacity: 1, transform: "translateY(0%)" },
+//   exit: { opacity: 0, transform: "translateY(150%)" },
+// };
 
 export default function Main() {
   return (
-    <main className="grid grid-cols-12 min-h-[calc(100vh-56px)] px-4 py-2 mb-4">
+    <main className="grid grid-cols-12 min-h-[calc(100vh-56px)] px-4 py-2 mb-4 overflow-hidden">
       <article className=" col-start-1 col-end-[-1] lg:col-end-10">
         {/* HEADER SECTION */}
         <motion.section

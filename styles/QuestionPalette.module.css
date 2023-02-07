@@ -10,11 +10,14 @@
   }
 
   .buttons {
-    @apply px-3 py-2 grid grid-cols-5;
+    @apply px-3 py-2 grid grid-cols-5 gap-1;
     grid-template-rows: auto;
   }
 
   .btn {
-    @apply font-semibold;
+    @apply font-semibold rounded-sm transition-all;
+  }
+  .btn:hover {
+    @apply scale-105 shadow-md;
   }
 }

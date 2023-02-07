@@ -1,8 +1,13 @@
 import styles from "@/styles/QuestionPalette.module.css";
+import { MotionProps, motion } from "framer-motion";
 
-export default function QuestionPalette() {
+type Props = {
+  cardProps?: MotionProps;
+};
+
+export default function QuestionPalette({ cardProps }: Props) {
   return (
-    <div className={styles.container}>
+    <motion.div {...cardProps} className={styles.container}>
       {/* HEADING */}
       <h3 className={styles.heading}>Question Palette</h3>
       {/* buttons */}
@@ -18,6 +23,6 @@ export default function QuestionPalette() {
         <button className={"bg-purple-300 " + styles.btn}>9</button>
         <button className={"bg-orange-300 " + styles.btn}>10</button>
       </div>
-    </div>
+    </motion.div>
   );
 }

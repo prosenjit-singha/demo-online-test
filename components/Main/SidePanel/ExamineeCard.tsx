@@ -1,9 +1,15 @@
-// import Image from "next/image";
-// import user from "@/assets/images/people2.png";
+import { MotionProps, motion } from "framer-motion";
 
-function ExamineeCard() {
+type Props = {
+  cardProps?: MotionProps;
+};
+
+function ExamineeCard({ cardProps }: Props) {
   return (
-    <div className="flex items-center gap-3 p-3 border rounded shadow-lg">
+    <motion.div
+      {...cardProps}
+      className="flex items-center gap-3 p-3 border rounded shadow-lg"
+    >
       <img
         alt="user"
         src={
@@ -12,16 +18,20 @@ function ExamineeCard() {
         width={80}
         className="rounded object-cover aspect-square"
       />
-      <div className="">
-        <h3 className="font-semibold text-lg">Prosenjit</h3>
-        <p className="text-sm">
-          <span className="block font-semibold">Time Left: </span>
-          <span className="block font-semibold text-slate-600">
-            01 hour 05 min
-          </span>
-        </p>
+      <div className="w-full">
+        <h3 className="font-semibold text-lg ">Prosenjit</h3>
+        <div className="">
+          <p className="text-sm">
+            <span className="block font-semibold text-blue-900">
+              Time Left:{" "}
+            </span>
+            <span className="block font-semibold text-blue-900/70">
+              01 hour 05 min
+            </span>
+          </p>
+        </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

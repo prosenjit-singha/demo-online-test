@@ -1,6 +1,15 @@
-export default function Legend() {
+import { MotionProps, motion } from "framer-motion";
+
+type Props = {
+  cardProps?: MotionProps;
+};
+
+export default function Legend({ cardProps }: Props) {
   return (
-    <div className="rounded overflow-hidden border shadow-xl">
+    <motion.div
+      {...cardProps}
+      className="rounded overflow-hidden border shadow-xl"
+    >
       <h1 className="px-3 py-1 bg-blue-500 text-white">
         Legend (Click to view)
       </h1>
@@ -31,11 +40,11 @@ export default function Legend() {
 
       {/* BUTTONS */}
       <div className="grid grid-cols-2 gap-1 px-3 py-2">
-        <button className="btn-primary">Profile</button>
-        <button className="btn-primary">Instr</button>
-        <button className="btn-primary">Questions</button>
-        <button className="btn-primary">Submit</button>
+        <button className="btn-primary hover:bg-blue-100">Profile</button>
+        <button className="btn-primary hover:bg-blue-100">Instr</button>
+        <button className="btn-primary hover:bg-blue-100">Questions</button>
+        <button className="btn-primary hover:bg-blue-100">Submit</button>
       </div>
-    </div>
+    </motion.div>
   );
 }
